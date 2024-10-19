@@ -1,0 +1,207 @@
+{
+    "start_time": "2024-10-18T23:00:00Z",
+    "finished": true,
+    "games": [
+        {
+            "type": 2,
+            "start": "19:00 EDT",
+            "home": {
+                "name": "PIT",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
+                "colour": "#FCB514",
+                "score": 1,
+                "sog": 26
+            },
+            "away": {
+                "name": "CAR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
+                "colour": "#CE1126",
+                "score": 4,
+                "sog": 39
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "PIT",
+                    "goal": "Drew O'Connor, 12:20'",
+                    "assist": "L. Eller, J. Puljujarvi"
+                },
+                {
+                    "period": 0,
+                    "team": "CAR",
+                    "goal": "Jackson Blake, 13:24'",
+                    "assist": "E. Robinson, J. Kotkaniemi"
+                },
+                {
+                    "period": 2,
+                    "team": "CAR",
+                    "goal": "Martin Necas, 06:52'",
+                    "assist": "S. Jarvis, S. Aho"
+                },
+                {
+                    "period": 0,
+                    "team": "CAR",
+                    "goal": "Shayne Gostisbehere, 17:13'",
+                    "assist": "A. Svechnikov, M. Necas"
+                },
+                {
+                    "period": 3,
+                    "team": "CAR",
+                    "goal": "Jack Roslovic, 11:00'",
+                    "assist": "J. Kotkaniemi, D. Orlov"
+                }
+            ],
+            "state": 2
+        },
+        {
+            "type": 2,
+            "start": "20:00 EDT",
+            "home": {
+                "name": "WPG",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
+                "colour": "#041E42",
+                "score": 8,
+                "sog": 36
+            },
+            "away": {
+                "name": "SJS",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
+                "colour": "#006D75",
+                "score": 3,
+                "sog": 22
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "WPG",
+                    "goal": "Josh Morrissey, 01:59'",
+                    "assist": "C. Miller, N. Ehlers"
+                },
+                {
+                    "period": 0,
+                    "team": "WPG",
+                    "goal": "Nikolaj Ehlers, 09:25'",
+                    "assist": "G. Vilardi, M. Scheifele"
+                },
+                {
+                    "period": 0,
+                    "team": "SJS",
+                    "goal": "Tyler Toffoli, 11:43'",
+                    "assist": "J. Walman, M. Granlund"
+                },
+                {
+                    "period": 0,
+                    "team": "WPG",
+                    "goal": "Nikolaj Ehlers, 13:31'",
+                    "assist": "C. Perfetti"
+                },
+                {
+                    "period": 0,
+                    "team": "WPG",
+                    "goal": "Neal Pionk, 18:48'",
+                    "assist": "A. Iafallo, V. Namestnikov"
+                },
+                {
+                    "period": 2,
+                    "team": "WPG",
+                    "goal": "Kyle Connor, 01:46'",
+                    "assist": "N. Pionk, G. Vilardi"
+                },
+                {
+                    "period": 0,
+                    "team": "SJS",
+                    "goal": "Luke Kunin, 10:28'",
+                    "assist": "C. Grundstrom, C. Ceci"
+                },
+                {
+                    "period": 3,
+                    "team": "WPG",
+                    "goal": "Cole Perfetti, 09:50'",
+                    "assist": "A. Iafallo, V. Namestnikov"
+                },
+                {
+                    "period": 0,
+                    "team": "SJS",
+                    "goal": "Fabian Zetterlund, 10:09'",
+                    "assist": "T. Toffoli, M. Granlund"
+                },
+                {
+                    "period": 0,
+                    "team": "WPG",
+                    "goal": "Cole Perfetti, 12:55'",
+                    "assist": "N. Pionk, V. Namestnikov"
+                },
+                {
+                    "period": 0,
+                    "team": "WPG",
+                    "goal": "Vladislav Namestnikov, 19:27'",
+                    "assist": "N. Pionk, C. Perfetti"
+                }
+            ],
+            "state": 2
+        },
+        {
+            "type": 2,
+            "start": "21:00 EDT",
+            "home": {
+                "name": "COL",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
+                "colour": "#6F263D",
+                "score": 4,
+                "sog": 49
+            },
+            "away": {
+                "name": "ANA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
+                "colour": "#FC4C02",
+                "score": 3,
+                "sog": 20
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "ANA",
+                    "goal": "Leo Carlsson, 06:05'",
+                    "assist": 0
+                },
+                {
+                    "period": 0,
+                    "team": "ANA",
+                    "goal": "Ryan Strome, 19:36'",
+                    "assist": "B. Dumoulin"
+                },
+                {
+                    "period": 2,
+                    "team": "COL",
+                    "goal": "Casey Mittelstadt, 00:57'",
+                    "assist": "N. Kovalenko, C. Makar"
+                },
+                {
+                    "period": 3,
+                    "team": "COL",
+                    "goal": "Ross Colton, 00:35'",
+                    "assist": "C. Mittelstadt, M. Rantanen"
+                },
+                {
+                    "period": 0,
+                    "team": "COL",
+                    "goal": "Ross Colton, 11:42'",
+                    "assist": "M. Rantanen, N. MacKinnon"
+                },
+                {
+                    "period": 0,
+                    "team": "ANA",
+                    "goal": "Troy Terry, 19:47'",
+                    "assist": "O. Zellweger"
+                },
+                {
+                    "period": 4,
+                    "team": "COL",
+                    "goal": "Nathan MacKinnon, 04:19'",
+                    "assist": "M. Rantanen"
+                }
+            ],
+            "state": 2
+        }
+    ]
+}

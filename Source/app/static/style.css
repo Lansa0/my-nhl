@@ -1,0 +1,282 @@
+/* UNIVERSAL */
+body {
+    background-image: url("../static/images/LunarTear.jpg");
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    margin: 0;
+}
+
+.top-bar {
+    height: 5%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.top-bar a {
+    margin-top: 0.5%;
+    text-decoration: none;
+    font-size: 1.5vw;
+    color: #FFFFFF;
+    text-align: right;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HOME */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-menu {
+    background: transparent;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+}
+
+.home-menu a {
+    color: #FFFFFF;
+    height: 15%;
+    font-size: calc(1em + 2vw);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+.home-menu p {
+    color: #FFFFFF;
+    height: 15%;
+    font-size: calc(1em + 2vw);
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* MATCHES */
+
+.match-container {
+    display: flex;
+    height: 90%;
+    width: 100%;
+    max-width: 100%;
+    justify-content: left;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.match {
+    flex: 0 0 40%;         
+    background: transparent;   
+    /* background-color: black; */
+    height: 97%;
+    width: 40%;
+    border: 3px solid rgba(78, 76, 76, 0.5);
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
+.match-top-bar {
+    display: flex;
+    height: 10%;
+    background-color: aqua;
+    margin-bottom: 0.5%;
+    margin-top: 0.25%;
+}
+
+.match-team {
+    display: flex;
+    box-shadow:0px 0px 0px 4px black inset;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 42.5%;
+}
+
+.match-team img {
+    box-shadow:0px 0px 0px 6px black inset;
+    height: 100%;
+    width: 100%;
+}
+
+.match-score {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+
+.match-score p {
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;   
+}
+
+.match-clock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    /* box-shadow:0px 0px 0px 3px white inset; */
+    height: 7.5%;
+}
+
+.match-clock p {
+    color: white;
+    text-align: center;
+    font-size: 2.5vw; 
+    font-family:Arial, Helvetica, sans-serif;   
+}
+
+.match-shots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5%;
+}
+
+.match-shots p {
+    color: white;
+    text-align: center;
+    font-size: 2vw; 
+    font-family:Arial, Helvetica, sans-serif;   
+}
+
+.match-shots-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4%;
+    box-shadow:0px 0px 0px 6px black inset;
+    padding-left: 6px;
+    padding-right: 6px;
+    box-sizing: border-box;
+    margin-bottom: 0.5%;
+}
+
+.match-shots-bar div {
+    height: 100%;
+}
+
+.match-goals {
+    max-height: 72.25%;
+    height: 72.25%;
+    overflow-y: auto;
+}
+
+.match-goals .period {
+    margin: 0px;
+    color: white;
+    text-align: center;
+    font-size: 1.9vw; 
+    font-family:Arial, Helvetica, sans-serif;  
+}
+
+.match-goals .goal {
+    align-items: center;
+    margin: 0px;
+    color: white;
+    font-size: 1.8vw; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.match-goals .assist {
+    align-items: center;
+    margin: 0px;
+    color: white;
+    text-align: right;
+    font-size: 1.1vw; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* STANDINGS */
+
+
+
+.standings {
+    flex-direction: column;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 92%;
+}
+
+.standings .info {
+    width: 75%;
+    height: 6%;
+    background-color: crimson;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.standings .info p {
+    text-align: center;
+    color: #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 120%;
+}
+
+.standings .info .position {
+    width: 5%;
+}
+
+.standings .info .team {
+    /* text-align: left; */
+    width: 35%;
+}
+
+.standings .info .stat {
+    width: 8.125%;
+}
+
+.standings .list {
+    height: 80%;
+    width: 75%;
+    max-height: 100%;
+    background: transparent;
+    overflow-y: auto;
+    
+}
+
+.standings .list::-webkit-scrollbar {
+    display: none;
+}
+
+.standings .list .team {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 8.55%;
+    padding-bottom: 1%;
+}
+
+.standings .list .team p {
+    text-align: center;
+    color: #FFFFFF;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+}
+
+.standings .list .team .position {
+    width: 5%;
+}
+
+.standings .list .team img {
+    height: 100%;
+    width: 5%;
+}
+
+.standings .list .team .name {
+    width: 30%;
+}
+
+.standings .list .team .stat {
+    width: 8.125%;
+}
