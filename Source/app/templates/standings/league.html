@@ -12,8 +12,13 @@
         <a href="/" style="margin-left: 2%"><b>Home</b></a>
     </div>
 
-
     <div class="standings">
+
+        <div class="filter">
+            <a style="color: #FFFFFF; text-decoration: underline;" href="javascript:void(0);"><b>League</b></a>
+            <a href="/standings/conference"><b>Conference</b></a>
+            <a href="/standings/division"><b>Division</b></a>
+        </div>
 
         <div class="info">
             <p class="position"><b>Pos.</b></p>
@@ -30,12 +35,12 @@
 
         <div class="list">
             {% for team in data %}
-                {% if team.position % 2 == 0 %}
+                {% if team.league_position % 2 == 0 %}
                     <div class="team">
                 {% else %}
                     <div class="team" style="background-color: rgba(161, 161, 161, 0.1);">
                 {% endif %}
-                        <p class="position"><b>{{ team.position }}</b></p>
+                        <p class="position"><b>{{ team.league_position }}</b></p>
                         <img src="{{ team.logo }}" alt="" >
                         <p class="name">{{ team.name }}</p>
                         <p class="stat">{{ team.points }}</p>

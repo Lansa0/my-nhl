@@ -1,207 +1,681 @@
 {
-    "start_time": "2024-10-18T23:00:00Z",
-    "finished": true,
+    "start_time": "2024-10-19T17:00:00Z",
+    "finished": false,
     "games": [
+        {
+            "type": 2,
+            "start": "13:00 EDT",
+            "home": {
+                "name": "OTT",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/OTT_light.svg",
+                "colour": "#DA1A32",
+                "score": 5,
+                "sog": 28
+            },
+            "away": {
+                "name": "TBL",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/TBL_light.svg",
+                "colour": "#FFFFFF",
+                "score": 4,
+                "sog": 29
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "OTT",
+                    "goal": "Drake Batherson, 01:50'",
+                    "assist": "C. Giroux, J. Sanderson"
+                },
+                {
+                    "period": 0,
+                    "team": "OTT",
+                    "goal": "Josh Norris, 13:21'",
+                    "assist": "C. Giroux, D. Batherson"
+                },
+                {
+                    "period": 2,
+                    "team": "TBL",
+                    "goal": "Nikita Kucherov, 01:59'",
+                    "assist": "R. McDonagh, E. Cernak"
+                },
+                {
+                    "period": 0,
+                    "team": "TBL",
+                    "goal": "Nicholas Paul, 10:39'",
+                    "assist": "A. Cirelli, B. Hagel"
+                },
+                {
+                    "period": 0,
+                    "team": "OTT",
+                    "goal": "Drake Batherson, 13:20'",
+                    "assist": 0
+                },
+                {
+                    "period": 0,
+                    "team": "TBL",
+                    "goal": "Jake Guentzel, 18:13'",
+                    "assist": "B. Point, N. Kucherov"
+                },
+                {
+                    "period": 0,
+                    "team": "OTT",
+                    "goal": "Brady Tkachuk, 18:56'",
+                    "assist": "J. Sanderson, T. St\u00fctzle"
+                },
+                {
+                    "period": 3,
+                    "team": "OTT",
+                    "goal": "Noah Gregor, 06:17'",
+                    "assist": "S. Pinto, J. Sanderson"
+                },
+                {
+                    "period": 0,
+                    "team": "TBL",
+                    "goal": "Mitchell Chaffee, 08:11'",
+                    "assist": "N. Perbix, A. Cirelli"
+                }
+            ],
+            "state": 2
+        },
+        {
+            "type": 2,
+            "start": "14:00 EDT",
+            "home": {
+                "name": "NSH",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/NSH_light.svg",
+                "colour": "#FFB81C",
+                "score": 2,
+                "sog": 39
+            },
+            "away": {
+                "name": "DET",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/DET_light.svg",
+                "colour": "#CE1126",
+                "score": 5,
+                "sog": 24
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "NSH",
+                    "goal": "Luke Schenn, 08:48'",
+                    "assist": "R. O'Reilly, G. Nyquist"
+                },
+                {
+                    "period": 0,
+                    "team": "DET",
+                    "goal": "Vladimir Tarasenko, 13:26'",
+                    "assist": "J. Berggren, M. Kasper"
+                },
+                {
+                    "period": 2,
+                    "team": "DET",
+                    "goal": "Dylan Larkin, 03:17'",
+                    "assist": "A. DeBrincat, P. Kane"
+                },
+                {
+                    "period": 3,
+                    "team": "NSH",
+                    "goal": "Steven Stamkos, 00:32'",
+                    "assist": "F. Forsberg, J. Marchessault"
+                },
+                {
+                    "period": 0,
+                    "team": "DET",
+                    "goal": "Andrew Copp, 03:29'",
+                    "assist": "J. Veleno, C. Fischer"
+                },
+                {
+                    "period": 0,
+                    "team": "DET",
+                    "goal": "Simon Edvinsson, 18:43'",
+                    "assist": 0
+                },
+                {
+                    "period": 0,
+                    "team": "DET",
+                    "goal": "Andrew Copp, 19:18'",
+                    "assist": "M. Rasmussen"
+                }
+            ],
+            "state": 2
+        },
+        {
+            "type": 2,
+            "start": "16:00 EDT",
+            "home": {
+                "name": "DAL",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/DAL_light.svg",
+                "colour": "#006847",
+                "score": 4,
+                "sog": 24
+            },
+            "away": {
+                "name": "EDM",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/EDM_light.svg",
+                "colour": "#041E42",
+                "score": 1,
+                "sog": 31
+            },
+            "goals": [
+                {
+                    "period": 2,
+                    "team": "DAL",
+                    "goal": "Matt Duchene, 19:34'",
+                    "assist": "R. Hintz"
+                },
+                {
+                    "period": 3,
+                    "team": "DAL",
+                    "goal": "Matt Duchene, 12:06'",
+                    "assist": "M. Marchment, C. Blackwell"
+                },
+                {
+                    "period": 0,
+                    "team": "DAL",
+                    "goal": "Roope Hintz, 13:16'",
+                    "assist": "L. Stankoven, J. Robertson"
+                },
+                {
+                    "period": 0,
+                    "team": "EDM",
+                    "goal": "Leon Draisaitl, 17:38'",
+                    "assist": "R. Nugent-Hopkins, C. McDavid"
+                },
+                {
+                    "period": 0,
+                    "team": "DAL",
+                    "goal": "Jason Robertson, 18:01'",
+                    "assist": "L. Stankoven, R. Hintz"
+                }
+            ],
+            "state": 2
+        },
+        {
+            "type": 2,
+            "start": "18:00 EDT",
+            "home": {
+                "name": "FLA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/FLA_light.svg",
+                "colour": "#B9975B",
+                "score": 4,
+                "sog": 49
+            },
+            "away": {
+                "name": "VGK",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VGK_light.svg",
+                "colour": "#B9975B",
+                "score": 3,
+                "sog": 26
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "VGK",
+                    "goal": "Tanner Pearson, 19:27'",
+                    "assist": "N. Roy"
+                },
+                {
+                    "period": 2,
+                    "team": "FLA",
+                    "goal": "Sam Reinhart, 01:09'",
+                    "assist": "A. Lundell, A. Ekblad"
+                },
+                {
+                    "period": 0,
+                    "team": "VGK",
+                    "goal": "Keegan Kolesar, 14:15'",
+                    "assist": "T. Pearson, N. Roy"
+                },
+                {
+                    "period": 0,
+                    "team": "FLA",
+                    "goal": "Sam Bennett, 19:20'",
+                    "assist": "C. Verhaeghe, A. Lundell"
+                },
+                {
+                    "period": 3,
+                    "team": "VGK",
+                    "goal": "Brett Howden, 07:30'",
+                    "assist": 0
+                },
+                {
+                    "period": 0,
+                    "team": "FLA",
+                    "goal": "Eetu Luostarinen, 12:43'",
+                    "assist": "S. Reinhart, A. Ekblad"
+                },
+                {
+                    "period": 4,
+                    "team": "FLA",
+                    "goal": "Gustav Forsling, 04:43'",
+                    "assist": "S. Bennett, S. Reinhart"
+                }
+            ],
+            "state": 2
+        },
         {
             "type": 2,
             "start": "19:00 EDT",
             "home": {
-                "name": "PIT",
-                "logo": "https://assets.nhle.com/logos/nhl/svg/PIT_light.svg",
-                "colour": "#FCB514",
+                "name": "TOR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/TOR_light.svg",
+                "colour": "#FFFFFF",
                 "score": 1,
-                "sog": 26
+                "sog": 35
+            },
+            "away": {
+                "name": "NYR",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/NYR_light.svg",
+                "colour": "#0038A8",
+                "score": 3,
+                "sog": 29
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "NYR",
+                    "goal": "Alexis Lafreni\u00e8re, 11:44'",
+                    "assist": "V. Trocheck, V. Mancini"
+                },
+                {
+                    "period": 2,
+                    "team": "NYR",
+                    "goal": "Chris Kreider, 09:08'",
+                    "assist": "M. Zibanejad, R. Smith"
+                },
+                {
+                    "period": 3,
+                    "team": "TOR",
+                    "goal": "Auston Matthews, 03:40'",
+                    "assist": "O. Ekman-Larsson, M. Knies"
+                },
+                {
+                    "period": 0,
+                    "team": "NYR",
+                    "goal": "Chris Kreider, 19:00'",
+                    "assist": "M. Zibanejad, R. Smith"
+                }
+            ],
+            "clock": "PERIOD 3 - 00:13",
+            "state": 1
+        },
+        {
+            "type": 2,
+            "start": "19:00 EDT",
+            "home": {
+                "name": "NJD",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/NJD_light.svg",
+                "colour": "#CE1126",
+                "score": 5,
+                "sog": 28
+            },
+            "away": {
+                "name": "WSH",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/WSH_secondary_light.svg",
+                "colour": "#041E42",
+                "score": 5,
+                "sog": 31
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "NJD",
+                    "goal": "Erik Haula, 04:45'",
+                    "assist": "S. Noesen, T. Tatar"
+                },
+                {
+                    "period": 0,
+                    "team": "WSH",
+                    "goal": "Tom Wilson, 06:01'",
+                    "assist": "C. McMichael"
+                },
+                {
+                    "period": 0,
+                    "team": "WSH",
+                    "goal": "Connor McMichael, 10:14'",
+                    "assist": "T. Wilson, J. Chychrun"
+                },
+                {
+                    "period": 0,
+                    "team": "WSH",
+                    "goal": "Alex Ovechkin, 14:18'",
+                    "assist": "J. Carlson, D. Strome"
+                },
+                {
+                    "period": 2,
+                    "team": "NJD",
+                    "goal": "Nico Hischier, 00:34'",
+                    "assist": "S. Noesen"
+                },
+                {
+                    "period": 0,
+                    "team": "NJD",
+                    "goal": "Nico Hischier, 00:44'",
+                    "assist": "T. Meier"
+                },
+                {
+                    "period": 0,
+                    "team": "WSH",
+                    "goal": "Andrew Mangiapane, 09:15'",
+                    "assist": "T. van Riemsdyk, A. Protas"
+                },
+                {
+                    "period": 0,
+                    "team": "WSH",
+                    "goal": "Dylan Strome, 12:33'",
+                    "assist": "T. van Riemsdyk"
+                },
+                {
+                    "period": 3,
+                    "team": "NJD",
+                    "goal": "Dawson Mercer, 03:39'",
+                    "assist": "N. Hischier, T. Meier"
+                },
+                {
+                    "period": 0,
+                    "team": "NJD",
+                    "goal": "Dougie Hamilton, 12:28'",
+                    "assist": "J. Bratt, T. Meier"
+                }
+            ],
+            "clock": "PERIOD 3 - 02:06",
+            "state": 1
+        },
+        {
+            "type": 2,
+            "start": "19:00 EDT",
+            "home": {
+                "name": "NYI",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/NYI_light.svg",
+                "colour": "#00539B",
+                "score": 3,
+                "sog": 33
+            },
+            "away": {
+                "name": "MTL",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/MTL_light.svg",
+                "colour": "#AF1E2D",
+                "score": 3,
+                "sog": 21
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "NYI",
+                    "goal": "Bo Horvat, 14:32'",
+                    "assist": "M. Barzal, N. Dobson"
+                },
+                {
+                    "period": 0,
+                    "team": "NYI",
+                    "goal": "Kyle Palmieri, 16:58'",
+                    "assist": "N. Dobson, M. Tsyplakov"
+                },
+                {
+                    "period": 0,
+                    "team": "MTL",
+                    "goal": "Cole Caufield, 19:56'",
+                    "assist": "M. Matheson, J. Slafkovsky"
+                },
+                {
+                    "period": 2,
+                    "team": "MTL",
+                    "goal": "Logan Mailloux, 00:59'",
+                    "assist": "J. Evans, J. Anderson"
+                },
+                {
+                    "period": 3,
+                    "team": "NYI",
+                    "goal": "Anders Lee, 15:24'",
+                    "assist": "J. Pageau, A. Pelech"
+                },
+                {
+                    "period": 0,
+                    "team": "MTL",
+                    "goal": "Cole Caufield, 17:50'",
+                    "assist": "J. Slafkovsky, N. Suzuki"
+                }
+            ],
+            "clock": "PERIOD 3 - 00:32",
+            "state": 1
+        },
+        {
+            "type": 2,
+            "start": "19:00 EDT",
+            "home": {
+                "name": "PHI",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/PHI_light.svg",
+                "colour": "#F74902",
+                "score": 0,
+                "sog": 25
+            },
+            "away": {
+                "name": "VAN",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/VAN_light.svg",
+                "colour": "#00205B",
+                "score": 3,
+                "sog": 31
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "VAN",
+                    "goal": "Nils Hoglander, 16:09'",
+                    "assist": "E. Pettersson, C. Garland"
+                },
+                {
+                    "period": 2,
+                    "team": "VAN",
+                    "goal": "Brock Boeser, 08:40'",
+                    "assist": "T. Myers, J. DeBrusk"
+                },
+                {
+                    "period": 0,
+                    "team": "VAN",
+                    "goal": "Kiefer Sherwood, 09:30'",
+                    "assist": "T. Blueger"
+                }
+            ],
+            "clock": "PERIOD 3 - 05:35",
+            "state": 1
+        },
+        {
+            "type": 2,
+            "start": "19:00 EDT",
+            "home": {
+                "name": "CBJ",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CBJ_light.svg",
+                "colour": "#002654",
+                "score": 1,
+                "sog": 24
+            },
+            "away": {
+                "name": "MIN",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/MIN_light.svg",
+                "colour": "#AF2324",
+                "score": 3,
+                "sog": 35
+            },
+            "goals": [
+                {
+                    "period": 1,
+                    "team": "MIN",
+                    "goal": "Marco Rossi, 12:40'",
+                    "assist": "Y. Trenin, M. Foligno"
+                },
+                {
+                    "period": 3,
+                    "team": "MIN",
+                    "goal": "Kirill Kaprizov, 02:52'",
+                    "assist": "B. Faber, M. Boldy"
+                },
+                {
+                    "period": 0,
+                    "team": "MIN",
+                    "goal": "Mats Zuccarello, 08:26'",
+                    "assist": "K. Kaprizov, J. Merrill"
+                },
+                {
+                    "period": 0,
+                    "team": "CBJ",
+                    "goal": "Yegor Chinakhov, 18:35'",
+                    "assist": "S. Monahan, D. Jiricek"
+                }
+            ],
+            "state": 2
+        },
+        {
+            "type": 2,
+            "start": "19:00 EDT",
+            "home": {
+                "name": "STL",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/STL_light.svg",
+                "colour": "#002F87",
+                "score": 4,
+                "sog": 19
             },
             "away": {
                 "name": "CAR",
                 "logo": "https://assets.nhle.com/logos/nhl/svg/CAR_light.svg",
                 "colour": "#CE1126",
-                "score": 4,
-                "sog": 39
+                "score": 3,
+                "sog": 34
             },
             "goals": [
                 {
                     "period": 1,
-                    "team": "PIT",
-                    "goal": "Drew O'Connor, 12:20'",
-                    "assist": "L. Eller, J. Puljujarvi"
-                },
-                {
-                    "period": 0,
                     "team": "CAR",
-                    "goal": "Jackson Blake, 13:24'",
-                    "assist": "E. Robinson, J. Kotkaniemi"
+                    "goal": "Andrei Svechnikov, 01:21'",
+                    "assist": "S. Aho, S. Jarvis"
                 },
                 {
                     "period": 2,
-                    "team": "CAR",
-                    "goal": "Martin Necas, 06:52'",
-                    "assist": "S. Jarvis, S. Aho"
+                    "team": "STL",
+                    "goal": "Mathieu Joseph, 10:22'",
+                    "assist": "B. Schenn, P. Joseph"
                 },
                 {
                     "period": 0,
-                    "team": "CAR",
-                    "goal": "Shayne Gostisbehere, 17:13'",
-                    "assist": "A. Svechnikov, M. Necas"
+                    "team": "STL",
+                    "goal": "Jake Neighbours, 11:35'",
+                    "assist": "Z. Bolduc"
+                },
+                {
+                    "period": 0,
+                    "team": "STL",
+                    "goal": "Dylan Holloway, 13:31'",
+                    "assist": "P. Broberg, M. Joseph"
                 },
                 {
                     "period": 3,
                     "team": "CAR",
-                    "goal": "Jack Roslovic, 11:00'",
-                    "assist": "J. Kotkaniemi, D. Orlov"
+                    "goal": "Shayne Gostisbehere, 01:39'",
+                    "assist": "S. Aho, A. Svechnikov"
+                },
+                {
+                    "period": 0,
+                    "team": "CAR",
+                    "goal": "Jack Roslovic, 02:57'",
+                    "assist": "J. Drury, J. Slavin"
+                },
+                {
+                    "period": 0,
+                    "team": "STL",
+                    "goal": "Kasperi Kapanen, 04:26'",
+                    "assist": "J. Neighbours, C. Parayko"
                 }
             ],
-            "state": 2
+            "clock": "PERIOD 3 - 02:43",
+            "state": 1
         },
         {
             "type": 2,
             "start": "20:00 EDT",
             "home": {
-                "name": "WPG",
-                "logo": "https://assets.nhle.com/logos/nhl/svg/WPG_light.svg",
-                "colour": "#041E42",
-                "score": 8,
-                "sog": 36
+                "name": "CHI",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CHI_light.svg",
+                "colour": "#CF0A2C",
+                "score": 2,
+                "sog": 25
             },
             "away": {
-                "name": "SJS",
-                "logo": "https://assets.nhle.com/logos/nhl/svg/SJS_light.svg",
-                "colour": "#006D75",
+                "name": "BUF",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/BUF_light.svg",
+                "colour": "#003087",
                 "score": 3,
-                "sog": 22
+                "sog": 17
             },
             "goals": [
                 {
                     "period": 1,
-                    "team": "WPG",
-                    "goal": "Josh Morrissey, 01:59'",
-                    "assist": "C. Miller, N. Ehlers"
+                    "team": "BUF",
+                    "goal": "Tage Thompson, 08:39'",
+                    "assist": "J. Peterka, A. Tuch"
                 },
                 {
                     "period": 0,
-                    "team": "WPG",
-                    "goal": "Nikolaj Ehlers, 09:25'",
-                    "assist": "G. Vilardi, M. Scheifele"
-                },
-                {
-                    "period": 0,
-                    "team": "SJS",
-                    "goal": "Tyler Toffoli, 11:43'",
-                    "assist": "J. Walman, M. Granlund"
-                },
-                {
-                    "period": 0,
-                    "team": "WPG",
-                    "goal": "Nikolaj Ehlers, 13:31'",
-                    "assist": "C. Perfetti"
-                },
-                {
-                    "period": 0,
-                    "team": "WPG",
-                    "goal": "Neal Pionk, 18:48'",
-                    "assist": "A. Iafallo, V. Namestnikov"
+                    "team": "BUF",
+                    "goal": "Beck Malenstyn, 11:31'",
+                    "assist": "C. Clifton, P. Krebs"
                 },
                 {
                     "period": 2,
-                    "team": "WPG",
-                    "goal": "Kyle Connor, 01:46'",
-                    "assist": "N. Pionk, G. Vilardi"
+                    "team": "CHI",
+                    "goal": "Craig Smith, 06:28'",
+                    "assist": "L. Reichel, S. Jones"
                 },
                 {
                     "period": 0,
-                    "team": "SJS",
-                    "goal": "Luke Kunin, 10:28'",
-                    "assist": "C. Grundstrom, C. Ceci"
-                },
-                {
-                    "period": 3,
-                    "team": "WPG",
-                    "goal": "Cole Perfetti, 09:50'",
-                    "assist": "A. Iafallo, V. Namestnikov"
+                    "team": "CHI",
+                    "goal": "Craig Smith, 12:48'",
+                    "assist": "L. Reichel, C. Murphy"
                 },
                 {
                     "period": 0,
-                    "team": "SJS",
-                    "goal": "Fabian Zetterlund, 10:09'",
-                    "assist": "T. Toffoli, M. Granlund"
-                },
-                {
-                    "period": 0,
-                    "team": "WPG",
-                    "goal": "Cole Perfetti, 12:55'",
-                    "assist": "N. Pionk, V. Namestnikov"
-                },
-                {
-                    "period": 0,
-                    "team": "WPG",
-                    "goal": "Vladislav Namestnikov, 19:27'",
-                    "assist": "N. Pionk, C. Perfetti"
+                    "team": "BUF",
+                    "goal": "JJ Peterka, 18:37'",
+                    "assist": "T. Thompson, O. Power"
                 }
             ],
-            "state": 2
+            "clock": "PERIOD 2 - 01:04",
+            "state": 1
         },
         {
             "type": 2,
             "start": "21:00 EDT",
             "home": {
-                "name": "COL",
-                "logo": "https://assets.nhle.com/logos/nhl/svg/COL_light.svg",
-                "colour": "#6F263D",
-                "score": 4,
-                "sog": 49
+                "name": "UTA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/UTA_light.svg",
+                "colour": "#71AFE5",
+                "score": 0,
+                "sog": 8
             },
             "away": {
-                "name": "ANA",
-                "logo": "https://assets.nhle.com/logos/nhl/svg/ANA_light.svg",
-                "colour": "#FC4C02",
-                "score": 3,
-                "sog": 20
+                "name": "BOS",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/BOS_light.svg",
+                "colour": "#FCB514",
+                "score": 0,
+                "sog": 6
             },
-            "goals": [
-                {
-                    "period": 1,
-                    "team": "ANA",
-                    "goal": "Leo Carlsson, 06:05'",
-                    "assist": 0
-                },
-                {
-                    "period": 0,
-                    "team": "ANA",
-                    "goal": "Ryan Strome, 19:36'",
-                    "assist": "B. Dumoulin"
-                },
-                {
-                    "period": 2,
-                    "team": "COL",
-                    "goal": "Casey Mittelstadt, 00:57'",
-                    "assist": "N. Kovalenko, C. Makar"
-                },
-                {
-                    "period": 3,
-                    "team": "COL",
-                    "goal": "Ross Colton, 00:35'",
-                    "assist": "C. Mittelstadt, M. Rantanen"
-                },
-                {
-                    "period": 0,
-                    "team": "COL",
-                    "goal": "Ross Colton, 11:42'",
-                    "assist": "M. Rantanen, N. MacKinnon"
-                },
-                {
-                    "period": 0,
-                    "team": "ANA",
-                    "goal": "Troy Terry, 19:47'",
-                    "assist": "O. Zellweger"
-                },
-                {
-                    "period": 4,
-                    "team": "COL",
-                    "goal": "Nathan MacKinnon, 04:19'",
-                    "assist": "M. Rantanen"
-                }
-            ],
-            "state": 2
+            "goals": [],
+            "clock": "PERIOD 1 - 02:46",
+            "state": 1
+        },
+        {
+            "type": 2,
+            "start": "22:00 EDT",
+            "home": {
+                "name": "SEA",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/SEA_light.svg",
+                "colour": "#99D9D9"
+            },
+            "away": {
+                "name": "CGY",
+                "logo": "https://assets.nhle.com/logos/nhl/svg/CGY_light.svg",
+                "colour": "#D2001C"
+            },
+            "state": 0
         }
     ]
 }

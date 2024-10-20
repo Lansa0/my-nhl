@@ -16,4 +16,4 @@ def conference():
 
 @STANDINGS.route("/division")
 def division():
-    return render_template("standings/conference.html",data=Cache.get("standings"))
+    return render_template("standings/division.html",data=Cache.get("standings"))

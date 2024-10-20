@@ -12,8 +12,13 @@
         <a href="/" style="margin-left: 2%"><b>Home</b></a>
     </div>
 
-
     <div class="standings">
+
+        <div class="filter">
+            <a href="/standings/league"><b>League</b></a>
+            <a style="color: #FFFFFF; text-decoration: underline;" href="javascript:void(0);"><b>Conference</b></a>
+            <a href="/standings/division"><b>Division</b></a>
+        </div>
 
         <div class="info">
             <p class="position"><b>Pos.</b></p>
@@ -29,13 +34,17 @@
         </div>
 
         <div class="list">
+            <div class="filter">
+                <h1>Eastern</h1>
+            </div>
             {% for team in data %}
-                {% if team.position % 2 == 0 %}
-                    <div class="team">
-                {% else %}
-                    <div class="team" style="background-color: rgba(161, 161, 161, 0.1);">
-                {% endif %}
-                        <p class="position"><b>{{ team.position }}</b></p>
+                {% if team.conference == "E" %}
+                    {% if team.conference_position % 2 == 0 %}
+                        <div class="team">
+                    {% else %}
+                        <div class="team" style="background-color: rgba(161, 161, 161, 0.1);">
+                    {% endif %}
+                        <p class="position"><b>{{ team.conference_position }}</b></p>
                         <img src="{{ team.logo }}" alt="" >
                         <p class="name">{{ team.name }}</p>
                         <p class="stat">{{ team.points }}</p>
@@ -47,6 +56,32 @@
                         <p class="stat">{{ team.against }}</p>
                         <p class="stat">{{ team.differential }}</p>
                     </div>
+                {% endif %}
+            {% endfor %}
+            
+            <div class="filter">
+                <h1>Western</h1>
+            </div>
+            {% for team in data %}
+                {% if team.conference == "W" %}
+                    {% if team.conference_position % 2 == 0 %}
+                        <div class="team">
+                    {% else %}
+                        <div class="team" style="background-color: rgba(161, 161, 161, 0.1);">
+                    {% endif %}
+                        <p class="position"><b>{{ team.conference_position }}</b></p>
+                        <img src="{{ team.logo }}" alt="" >
+                        <p class="name">{{ team.name }}</p>
+                        <p class="stat">{{ team.points }}</p>
+                        <p class="stat">{{ team.played }}</p>
+                        <p class="stat">{{ team.wins }}</p>
+                        <p class="stat">{{ team.losses }}</p>
+                        <p class="stat">{{ team.otl }}</p>
+                        <p class="stat">{{ team.for }}</p>
+                        <p class="stat">{{ team.against }}</p>
+                        <p class="stat">{{ team.differential }}</p>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </div>

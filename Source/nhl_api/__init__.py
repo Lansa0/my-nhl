@@ -133,10 +133,12 @@ def Standings() -> list:
     Standings = Data["standings"]
 
     ToReturn : list = []
-    for position,team_info in enumerate(Standings,start=1):
+    for team_info in Standings:
         Team = {
             "colour" : TeamColours[team_info["teamAbbrev"]["default"]],
-            "position" : position,
+            "league_position" : team_info["leagueSequence"],
+            "conference_position" : team_info["conferenceSequence"],
+            "division_position" : team_info["divisionSequence"],
             "name" : team_info["teamName"]["default"],
             "logo" : team_info["teamLogo"],
             "points" : team_info["points"],
@@ -147,7 +149,6 @@ def Standings() -> list:
             "for" : team_info["goalFor"],
             "against" : team_info["goalAgainst"],
             "differential" : team_info["goalDifferential"],
-
             "conference" : team_info["conferenceAbbrev"],
             "division" : team_info["divisionAbbrev"]
         }

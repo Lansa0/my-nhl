@@ -197,14 +197,29 @@ body {
 
 /* STANDINGS */
 
-
-
 .standings {
     flex-direction: column;
     display: flex;
     justify-content:center;
     align-items:center;
     height: 92%;
+}
+
+.standings .filter {
+    width: 75%;
+    height: 6%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.standings .filter a {
+    text-align: center;
+    color: #605656;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.5vw;
+    margin-right: 5%;
+    text-decoration: none;
 }
 
 .standings .info {
@@ -220,7 +235,7 @@ body {
     text-align: center;
     color: #000000;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 120%;
+    font-size: 1.5vw;
 }
 
 .standings .info .position {
@@ -228,7 +243,6 @@ body {
 }
 
 .standings .info .team {
-    /* text-align: left; */
     width: 35%;
 }
 
@@ -247,6 +261,21 @@ body {
 
 .standings .list::-webkit-scrollbar {
     display: none;
+}
+
+.standings .list .filter {
+    display: flex;
+    align-items: center;
+    height: 9%;
+    /* background-color: aqua; */
+}
+
+.standings .list .filter h1 {
+    padding-left: 1%;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-size: 2vw;
+    margin: 0%;
 }
 
 .standings .list .team {
