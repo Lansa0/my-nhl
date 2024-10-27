@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="scores">
+    <div class="scores" id="scores-container">
         {% for game in data.games %}
 
         <div class="match">
@@ -124,5 +124,22 @@
         {% endfor %} 
 
    </div>
+
+   <script>
+        const ScoresContainer = document.getElementById("scores-container")
+        const Key = "SCORES_SCROLL_POSITION:{{data.now}}"
+
+        window.addEventListener('load', () => {
+            const Position = sessionStorage.getItem(Key);
+            if (Position) {
+                ScoresContainer.scrollLeft = parseInt(Position, 10);
+            }
+        });
+
+        ScoresContainer.addEventListener('scroll', () => {
+            sessionStorage.setItem(Key, ScoresContainer.scrollLeft);
+        });
+   </script>
+
 </body>
 </html>
