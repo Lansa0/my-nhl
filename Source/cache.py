@@ -4,8 +4,11 @@ class __Cache:
     def __init__(self):
         self.cache = {}
 
-    def get(self,key : str) -> dict:
-        return self.cache[key]
+    def get(self,key : str) -> str:
+        try:
+            return self.cache[key]
+        except KeyError:
+            return False
     
     def set(self,key : str,data):
         self.cache[key] = data

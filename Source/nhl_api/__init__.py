@@ -39,17 +39,34 @@ TeamColours = {
     "WPG": "#041E42",  # Winnipeg Jets
 }
 
-def Scores() -> list:
-    Data = raw.getScores()
+def Scores(date : str = "now") -> list:
+    """
+    Returns a list of NHL scores during the given date\n
+    Modified version of the raw json given from the NHL api endpoint
+    """
+    
+    Data = raw.getScores(date)
     Games = Data["games"]
 
-    ToReturn : dict  = {}
+    if len(Games) == 0:
+        return {
+            "next" : Data["nextDate"],
+            "now" : Data["currentDate"],
+            "back" : Data["prevDate"],
+            "start_time" : "2000-01-01T00:00:00Z",
+            "finished" : True,
+            "games" : []
+        }
 
-    FirstMatch = Games[0]["startTimeUTC"]
-    ToReturn["start_time"] = FirstMatch
-    ToReturn["finished"] = None
+    ToReturn : dict  = {
+        "next" : Data["nextDate"],
+        "now" : Data["currentDate"],
+        "back" : Data["prevDate"],
+        "start_time" : Games[0]["startTimeUTC"],
+        "finished" : None,
+        "games" : []
+    }
 
-    ToReturn["games"] = []
     FinishedCounter = 0
     for game_info in Games:
         Game = {}

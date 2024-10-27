@@ -7,23 +7,25 @@ import pytz
 
 def Scores():
     while True:
+        CurrentDate = datetime.now().strftime("%Y-%m-%d")
+
         CurrentTime = datetime.now(pytz.utc)
         CurrentDay = CurrentTime.strftime("%d")
         CurrentHour = int(CurrentTime.strftime("%H"))
 
-        FirstMatchTime = Cache.get("scores")["start_time"]
+        FirstMatchTime = Cache.get(f"SCORES:{CurrentDate}")["start_time"]
         FirstDay = datetime.strptime(FirstMatchTime,"%Y-%m-%dT%H:%M:%SZ").day
         FirstHour =  datetime.strptime(FirstMatchTime,"%Y-%m-%dT%H:%M:%SZ").hour
         
         if int(CurrentDay) != int(FirstDay): 
             CurrentHour += 24
 
-        if FirstHour <= CurrentHour and not Cache.get("scores")["finished"]:
+        if FirstHour <= CurrentHour and not Cache.get(f"SCORES:{CurrentDate}")["finished"]:
             logging.info("Begin Live Score Updates")
             while True:
                 time.sleep(20)
                 Scores = nhl_api.Scores()
-                Cache.set("scores",Scores)
+                Cache.set(f"SCORES:{CurrentDate}",Scores)
 
                 if Scores["finished"]:
                     break

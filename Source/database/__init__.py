@@ -1,24 +1,23 @@
-from cache import Cache
+from datetime import datetime
 from database import updates
-import nhl_api
+from cache import Cache
 import threading
+import nhl_api
 import json
 
 def _writeJSON(data,file_name:str):
-    """
-    For debugging / Temporary substitiute for proper database
-    """
+    """For debugging """
     with open(f"Source/database/jsons/{file_name}.json","w") as f:
         json.dump(data,f,indent=4)
 
 def run():
-    Scores = nhl_api.Scores()
+    CurrentDate = datetime.now().strftime("%Y-%m-%d")
+    Scores = nhl_api.Scores(CurrentDate)
     _writeJSON(Scores,"scores")
-    Cache.set("scores",Scores)
+    Cache.set(f"SCORES:{CurrentDate}",Scores)
 
     Standings = nhl_api.Standings()
-    _writeJSON(Standings,"standings")
-    Cache.set("standings",Standings)
+    Cache.set("STANDINGS:now",Standings)
 
     ScoresUpdates = threading.Thread(target=updates.Scores,daemon=True)
     ScoresUpdates.start()

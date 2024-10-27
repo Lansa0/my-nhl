@@ -16,8 +16,8 @@ def _requestHandler(url : str):
         logging.error(f"JSON DECODE ERROR : {e}")
     return {}
 
-def getScores() -> dict:
-    URL = "https://api-web.nhle.com/v1/score/now"
+def getScores(date : str) -> dict:
+    URL = f"https://api-web.nhle.com/v1/score/{date}"
     return _requestHandler(URL)
 
 def getStandings() -> dict:

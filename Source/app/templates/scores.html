@@ -11,34 +11,44 @@
 <body>
 
     <div class="top-bar">
-        <a href="/" style="margin-left: 2%"><b>Home</b></a>
+        <a href="/"class="home"><b>Home</b></a>
+        <div class="date">
+            <a href="/scores/{{data.back}}"style="width: 15%;height: 100%;">
+                <svg width="100%"height="100%"viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 19L8 12L15 5"stroke="white"stroke-width="3"stroke-linecap="round"stroke-linejoin="round"/>
+                </svg>
+            </a>
+            <p>{{data.now}}</p>
+            <a href="/scores/{{data.next}}"style="width: 15%;height: 100%;">
+                <svg width="100%"height="100%"viewBox="0 0 24 24"fill="none"xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 5L16 12L9 19"stroke="white"stroke-width="3"stroke-linecap="round"stroke-linejoin="round"/>
+                </svg>
+            </a>
+        </div>
     </div>
 
-    <div class="match-container">
-        {% for game in data %}
+    <div class="scores">
+        {% for game in data.games %}
 
         <div class="match">
 
-            <div class="match-top-bar">
-
-                <div style="background-color: {{ game.home.colour }};"  class="match-team">
-                    <img src="{{ game.home.logo }}" alt="">
+            <div class="teams">
+                <div style="background-color:{{game.home.colour}};"class="team">
+                    <img src="{{game.home.logo}}"alt="">
                 </div>
-
-                <div class="match-score">
+                <div class="score">
                     {% if game.status == 0 %}
                         <p>| - |</p>
                     {% else %}
                         <p>{{game.home.score}} - {{game.away.score}}</p>
                     {% endif %}
                 </div>
-
-                <div style="background-color: {{ game.away.colour }};" class="match-team">
-                    <img src="{{ game.away.logo }}" alt="">
+                <div style="background-color:{{game.away.colour}};"class="team">
+                    <img src="{{game.away.logo}}"alt="">
                 </div>
             </div>
-
-            <div class="match-clock">
+            
+            <div class="clock">
                 {% if game.state == 0 %}
                     <p>{{game.start}}</p>
                 {% elif game.state == 1 %}
@@ -48,7 +58,7 @@
                 {% endif %}
             </div>
 
-            <div class="match-shots">
+            <div class="shots">
                 {% if game.state != 0 %}
                     <p style="width: 20%;">{{game.home.sog}}</p>
                     <p style="width: 80%;">Shots On Goal</p>
@@ -56,19 +66,19 @@
                 {% endif %}
             </div>
 
-            <div class="match-shots-bar">
+            <div class="bar">
                 {% if game.state != 0 %}
                     {% if game.home.sog == 0 and game.away.sog == 0 %}
-                    <div style="background-color: {{ game.home.colour }}; width: 50%;"></div>
-                    <div style="background-color: {{ game.away.colour }}; width: 50%;"></div>
+                    <div style="background-color:{{game.home.colour}};width:50%;"></div>
+                    <div style="background-color:{{game.away.colour}};width:50%;"></div>
                     {% else %}
-                    <div style="background-color: {{ game.home.colour }}; width: {{ (game.home.sog / (game.away.sog + game.home.sog)) * 100 }}%;"></div>
-                    <div style="background-color: {{ game.away.colour }}; width: {{ (game.away.sog / (game.away.sog + game.home.sog)) * 100 }}%;"></div>
+                    <div style="background-color:{{game.home.colour}};width:{{(game.home.sog/(game.away.sog+game.home.sog))*100}}%;"></div>
+                    <div style="background-color:{{game.away.colour}};width:{{(game.away.sog/(game.away.sog+game.home.sog))*100}}%;"></div>
                     {% endif %}
                 {% endif %}
             </div>
 
-            <div class="match-goals">
+            <div class="goals">
                 {% if game.state != 0 %}
                     {% for goal in game.goals %}
 
@@ -91,17 +101,17 @@
                         {% endif %}
 
                         {% if goal.team == game.home.name %}
-                            <p style="text-align: left;" class="goal">{{goal.goal}}</p>
+                            <p style="text-align:left;"class="goal">{{goal.goal}}</p>
 
                             {% if goal.assist != 0 %}
-                                <p style="text-align: left;" class="assist">{{goal.assist}}</p>
+                                <p style="text-align:left;"class="assist">{{goal.assist}}</p>
                             {% endif %}
 
                         {% else %}
-                            <p style="text-align: right;" class="goal">{{goal.goal}}</p>
+                            <p style="text-align:right;"class="goal">{{goal.goal}}</p>
 
                             {% if goal.assist != 0 %}
-                                <p style="text-align: right;" class="assist">{{goal.assist}}</p>
+                                <p style="text-align:right;"class="assist">{{goal.assist}}</p>
 
                             {% endif %}
                         {% endif %}
@@ -110,7 +120,7 @@
             </div>
 
         </div>
-
+        
         {% endfor %} 
 
    </div>

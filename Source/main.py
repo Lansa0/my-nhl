@@ -14,4 +14,4 @@ if __name__ == "__main__":
     database.run()
 
     App = makeApp()
-    App.run(host="127.0.0.1", port=8000)
+    App.run(host="127.0.0.1", port=8000,debug=False)
