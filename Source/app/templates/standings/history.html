@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goal Leaders</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="top-bar">
+        <a class="home" href="/"><b>Home</b></a>
+    </div>
+
+    <div class="history">
+
+        <div class="filters">
+            {% for team in data.teams %}
+                <button id="{{team}}-button" class="team-button" onclick="togglePath('{{team}}','{{team}}-logo','{{team}}-button')" style="background-color:{{data.teams[team].colour}}">
+                    <img id="{{team}}-logo" src="{{data.teams[team].logo}}" alt="">
+                </button>
+            {% endfor %}
+        </div>
+
+        <div class="graph">
+            <svg class="vis" style="width: {{(data.days-1)*10}}%;" viewBox="0 0 {{(data.days-1)*100}} 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                {% for team in data.teams %}
+                    <path id="{{team}}" d="M-1000,0 
+                    {% for standing in data.teams[team].history %}
+                        L{{(loop.index-1)*100}},{{(800/40)*(standing+0.5)}} 
+                    {% endfor %}
+                    " stroke="{{data.teams[team].colour}}"/>
+                {% endfor %}
+
+                {% for date in data.dates %}
+                    <text 
+                    x="{{(loop.index-1)*100}}"y={{(800/40)*(33+0.5)}} 
+                    transform="rotate(35 {{(loop.index-1)*100}} {{(800/40)*(33+0.5)}})">
+                        {{date}}
+                    </text>
+                {% endfor %}
+            </svg>
+        </div>
+
+    </div>
+
+    <script>
+        function togglePath(path,logo,bg){
+            const Path = document.getElementById(path);
+            const Logo = document.getElementById(logo)
+            const Background = document.getElementById(bg)
+
+            Path.style.display = Path.style.display === "none" ? "inline" : "none";
+            Logo.style.filter = Logo.style.filter === "grayscale(100%)" ? "none" : "grayscale(100%)";
+            Background.style.filter = Background.style.filter === "grayscale(100%)" ? "none" : "grayscale(100%)";
+        }
+    </script>
+
+</body>
+</html>

@@ -17,3 +17,7 @@ def conference():
 @STANDINGS.route("/division")
 def division():
     return render_template("standings/division.html",data=Cache.get("STANDINGS:now"))
+
+@STANDINGS.route("/history")
+def history():
+    return render_template("standings/history.html",data=Cache.get("STANDINGS:history"))

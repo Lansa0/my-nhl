@@ -13,11 +13,14 @@ def _writeJSON(data,file_name:str):
 def run():
     CurrentDate = datetime.now().strftime("%Y-%m-%d")
     Scores = nhl_api.Scores(CurrentDate)
-    _writeJSON(Scores,"scores")
     Cache.set(f"SCORES:{CurrentDate}",Scores)
 
     Standings = nhl_api.Standings()
     Cache.set("STANDINGS:now",Standings)
+
+    with open("Source/database/jsons/history.json", "r") as f:
+        StandingsHistory = json.load(f)
+    Cache.set("STANDINGS:history",StandingsHistory)
 
     ScoresUpdates = threading.Thread(target=updates.Scores,daemon=True)
     ScoresUpdates.start()
