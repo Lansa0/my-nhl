@@ -1,5 +1,6 @@
 from datetime import datetime
 import pytz
+import json
 
 import nhl_api.raw as raw
 
@@ -101,28 +102,33 @@ def Scores(date : str = "now") -> list:
             
             GoalList = []
             CurrentPeriod = 0
-            for goal_info in game_info["goals"]:
-                GoalInfo = {}
 
-                if goal_info["period"] > CurrentPeriod:
-                    CurrentPeriod = goal_info["period"]
-                    GoalInfo["period"] = CurrentPeriod
-                else:
-                    GoalInfo["period"] = 0
-                
-                GoalInfo["team"] = goal_info["teamAbbrev"]
-                GoalInfo["goal"] = goal_info["firstName"]["default"] + " " + goal_info["lastName"]["default"] + ", " + goal_info["timeInPeriod"] + "'"
-                
-                if len(goal_info["assists"]) > 0:
-                    String = ""
-                    for assist_info in goal_info["assists"]:
-                        String += assist_info["name"]["default"] + ", "
-                    String = String[:-2]
-                    GoalInfo["assist"] = String
-                else:
-                    GoalInfo["assist"] = 0
+            try:
+                for goal_info in game_info["goals"]:
+                    GoalInfo = {}
 
-                GoalList.append(GoalInfo)
+                    if goal_info["period"] > CurrentPeriod:
+                        CurrentPeriod = goal_info["period"]
+                        GoalInfo["period"] = CurrentPeriod
+                    else:
+                        GoalInfo["period"] = 0
+                    
+                    GoalInfo["team"] = goal_info["teamAbbrev"]
+                    GoalInfo["goal"] = goal_info["firstName"]["default"] + " " + goal_info["lastName"]["default"] + ", " + goal_info["timeInPeriod"] + "'"
+                    
+                    if len(goal_info["assists"]) > 0:
+                        String = ""
+                        for assist_info in goal_info["assists"]:
+                            String += assist_info["name"]["default"] + ", "
+                        String = String[:-2]
+                        GoalInfo["assist"] = String
+                    else:
+                        GoalInfo["assist"] = 0
+
+                    GoalList.append(GoalInfo)
+            except KeyError:
+                with open(f"GOAL_ERROR:{datetime.now().strftime('%y:%m:%d - %H:%M:%S')}.json","w") as f:
+                    json.dump(Data,f,indent=4)
 
             Game["goals"] = GoalList
             
